@@ -1,4 +1,4 @@
-# circle-divided-by-chord
+# Circle divided by chord
 
 > Circle divided by chord.
 
