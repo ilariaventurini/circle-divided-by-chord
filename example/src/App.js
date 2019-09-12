@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
-
-import ExampleComponent from 'circle-divided-by-chord'
+import React, { Component } from "react";
+import CircleDividedByChord from "circle-divided-by-chord";
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
+      <div className="">
+        <CircleDividedByChord radius={300} datum1={30} datum2={70} />
       </div>
-    )
+    );
   }
 }

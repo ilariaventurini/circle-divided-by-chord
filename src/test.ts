@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import CircleDividedByChord from "./";
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe("CircleDividedByChord", () => {
+  it("is truthy", () => {
+    expect(CircleDividedByChord).toBeTruthy();
+  });
+});
