@@ -27,12 +27,12 @@ function circularSegmentHeight(fractionArea: number, r: number) {
 }
 
 export type Props = {
-  color1: string;
-  color2: string;
-  radius: number;
-  datum1: number;
-  datum2: number;
-  angle: number;
+  color1?: string;
+  color2?: string;
+  radius?: number;
+  datum1?: number;
+  datum2?: number;
+  angle?: number;
 };
 
 export default class CircleDividedByChord extends React.Component<Props> {
