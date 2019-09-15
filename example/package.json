@@ -3,7 +3,7 @@
   "homepage": "https://ilariaventurini.github.io/circle-divided-by-chord",
   "version": "0.0.0",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
