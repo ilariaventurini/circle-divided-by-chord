@@ -12,6 +12,8 @@ npm install --save circle-divided-by-chord
 
 ## Usage
 
+# Basic example
+
 ```tsx
 import * as React from "react";
 import CircleDividedByChord from "circle-divided-by-chord";
@@ -22,6 +24,50 @@ class Example extends React.Component {
   }
 }
 ```
+
+![Example 1](https://user-images.githubusercontent.com/44204353/64919110-5fe71200-d7a7-11e9-870c-4378fec77039.png)
+
+# Another example
+
+```tsx
+import * as React from "react";
+import CircleDividedByChord from "circle-divided-by-chord";
+import { random, range } from "lodash";
+
+function getRandomColor() {
+  return `hsl(${parseInt(256 * Math.random())}, 70%, 85%, 1)`;
+}
+
+class Example extends React.Component {
+  render() {
+    return (
+      <div className="pa2">
+        {range(56).map(i => {
+          const datum1 = random(0, 100, true);
+          const datum2 = random(0, 100, true);
+          const angle = random(0, 360, true);
+          const color1 = getRandomColor();
+          const color2 = getRandomColor();
+
+          return (
+            <CircleDividedByChord
+              key={i}
+              radius={30}
+              datum1={datum1}
+              datum2={datum2}
+              angle={angle}
+              color1={color1}
+              color2={color2}
+            />
+          );
+        })}
+      </div>
+    );
+  }
+}
+```
+
+![Example 2](https://user-images.githubusercontent.com/44204353/64919209-5f02b000-d7a8-11e9-9e41-db13b67fe7d5.png)
 
 ### Props
 
