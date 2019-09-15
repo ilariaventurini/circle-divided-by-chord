@@ -1,4 +1,4 @@
-# circle-divided-by-chord
+# Circle divided by chord
 
 > Circle divided by chord.
 
@@ -8,6 +8,12 @@
 
 ```bash
 npm install --save circle-divided-by-chord
+```
+
+or
+
+```bash
+yarn add circle-divided-by-chord
 ```
 
 ## Usage
