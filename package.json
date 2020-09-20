@@ -1,62 +1,47 @@
 {
-  "name": "circle-divided-by-chord",
-  "version": "2.0.1",
-  "description": "Circle divided by chord.",
-  "author": "ilariaventurini",
+  "name": "circle-divided-by-chord-2",
+  "description": "",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilariaventurini/circle-divided-by-chord-2.git"
+  },
+  "author": {
+    "name": "Ilaria Venturini",
+    "email": "venturini.ila@gmail.com"
+  },
+  "private": true,
   "license": "MIT",
-  "repository": "ilariaventurini/circle-divided-by-chord",
+  "keywords": [],
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
-    "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
-    "test:watch": "react-scripts-ts test --env=jsdom",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
-  },
-  "dependencies": {
-    "bcrypt": "^3.0.6",
-    "eslint": "^6.4.0",
-    "hoek": "^6.1.3",
-    "js-yaml": "^3.13.1",
-    "mem": "^5.1.1",
-    "webpack-dev-server": "^3.8.1"
-  },
-  "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+    "compile": "rm -rf dist/ && tsc --outDir dist",
+    "compile-watch": "rm -rf dist/ && tsc -w --outDir dist",
+    "format": "prettier src/**/*.{js,jsx,ts,tsx} --write",
+    "lint": "tslint -p tsconfig.json",
+    "prepublish": "yarn compile",
+    "clean": "yarn format && yarn lint",
+    "start:demo": "parcel demo/index.html",
+    "build": "parcel build demo/index.html --out-dir demo-build"
   },
   "devDependencies": {
-    "@svgr/rollup": "^2.4.1",
-    "@types/jest": "^23.1.5",
-    "@types/react": "^16.3.13",
-    "@types/react-dom": "^16.0.5",
-    "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0",
-    "cross-env": "^5.1.4",
-    "gh-pages": "^1.2.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts-ts": "^4.0.8",
-    "rollup": "^0.62.0",
-    "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-commonjs": "^9.1.3",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-typescript2": "^0.24.2",
-    "rollup-plugin-url": "^1.4.0",
-    "typescript": "^2.8.3"
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.1",
+    "typescript": "^4.0.2"
   },
-  "files": [
-    "dist"
-  ]
+  "dependencies": {
+    "divide-up-circle-in-circular-segments": "^1.0.5",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
