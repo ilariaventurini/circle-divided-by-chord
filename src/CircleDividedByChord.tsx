@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { computeCircularSegments } from 'divide-up-circle-in-circular-segments'
 
 export type Props = {

@@ -16,3 +16,10 @@ body {
   width: 100%;
   position: fixed;
 }
+
+.button {
+  background-color: #000;
+  opacity: 0.8;
+  color: #fff;
+  transition: opacity 0.2s;
+}

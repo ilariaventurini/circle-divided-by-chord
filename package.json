@@ -35,13 +35,15 @@
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.1",
+    "tachyons": "^4.11.1",
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "divide-up-circle-in-circular-segments": "^1.0.5",
     "@types/react": "^16.9.48",
     "@types/react-dom": "^16.9.8",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "divide-up-circle-in-circular-segments": "^1.0.5",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "tachyons-extra": "^1.0.3"
   }
 }
