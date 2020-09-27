@@ -27,10 +27,6 @@ or
 yarn add circle-divided-by-chord
 ```
 
-## Screenshots
-
-![image](https://user-images.githubusercontent.com/44204353/93715819-f47b1180-fb6b-11ea-90e3-9e0f352db837.png)
-
 ## API
 
 Props are all optional:
@@ -44,54 +40,68 @@ Props are all optional:
 | `datum2`  | `number` |          `80` | second datum in `[0-100]`   |
 | `angle`   | `number` |         `135` | rotation angle (degree)     |
 
+## Demo page
+
+[Here](https://circle-divided-by-chord.netlify.app/) the demo page.
+
+![demo](https://user-images.githubusercontent.com/44204353/94367340-5bee0f80-00de-11eb-9a1e-e8096bf21661.gif)
+
 ## Examples
 
-### Basic example
+```tsx
+import React from "react"
+import CircleDividedByChord from "circle-divided-by-chord"
+
+const Example = () => {
+  return <CircleDividedByChord />
+}
+```
+
+![example1](https://user-images.githubusercontent.com/44204353/64919110-5fe71200-d7a7-11e9-870c-4378fec77039.png)
+
+---
 
 ```tsx
 import React from "react"
 import CircleDividedByChord from "circle-divided-by-chord"
 
-class Example extends React.Component {
-  render() {
-    return <CircleDividedByChord />
-  }
+const Example = () => {
+  return (
+    <CircleDividedByChord
+      radius={150}
+      datum1={50}
+      datum2={50}
+      angle={0}
+      color1="#FF6663"
+      color2="#0B3954"
+    />
+  )
 }
 ```
 
-![Example 1](https://user-images.githubusercontent.com/44204353/64919110-5fe71200-d7a7-11e9-870c-4378fec77039.png)
+![example2](https://user-images.githubusercontent.com/44204353/94367513-84c2d480-00df-11eb-9a1a-eb5182a49f73.png)
 
-### Another example
+---
 
 ```tsx
 import React from "react"
 import CircleDividedByChord from "circle-divided-by-chord"
-import { random, range } from "lodash"
 
-function getRandomColor() {
-  return `hsl(${parseInt(256 * Math.random())}, 70%, 85%, 1)`
-}
-
-class Example extends React.Component {
-  render() {
-    return (
-      range(56).map(i =>
-        <CircleDividedByChord
-          key={i}
-          radius={30}
-          datum1={random(0, 100, true)}
-          datum2={random(0, 100, true)}
-          angle={random(0, 360, true)}
-          color1={getRandomColor()}
-          color2={getRandomColor()}
-        />
-      )
-    )
-  }
+const Example = () => {
+  return (
+    <CircleDividedByChord
+      radius={150}
+      datum1={70}
+      datum2={30}
+      angle={0}
+      color1="#525174"
+      color2="#5DD39E"
+    />
+  )
 }
 ```
 
-![Example 2](https://user-images.githubusercontent.com/44204353/64919209-5f02b000-d7a8-11e9-9e41-db13b67fe7d5.png)
+![example3](https://user-images.githubusercontent.com/44204353/94367662-74f7c000-00e0-11eb-827e-8f5e08f49374.png)
 
 ## License
 
