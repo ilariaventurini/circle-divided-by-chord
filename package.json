@@ -1,16 +1,16 @@
 {
-  "name": "circle-divided-by-chord-2",
+  "name": "circle-divided-by-chord",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ilariaventurini/circle-divided-by-chord-2.git"
+    "url": "https://github.com/ilariaventurini/circle-divided-by-chord.git"
   },
   "author": {
     "name": "Ilaria Venturini",
     "email": "venturini.ila@gmail.com"
   },
-  "private": true,
+  "private": false,
   "license": "MIT",
   "keywords": [],
   "main": "dist/index.js",
