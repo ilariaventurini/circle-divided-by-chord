@@ -1,6 +1,8 @@
-<div align="center" style="text-align: center">
+<div align="center" style="text-align: center;">
   <h1>Circle divided by chord</h1>
-  <p>Divide a circle into two circular segments whose area is proportional to the data</p>
+
+Divide a circle into two circular segments whose area is proportional to the data\
+[demo page](https://divide-up-circle-in-circular-segments.netlify.app)
 </div>
 
 <p align="center">
@@ -9,6 +11,8 @@
       src="https://img.shields.io/npm/v/circle-divided-by-chord.svg">
   </a>
 </p>
+
+</div>
 
 ---
 
